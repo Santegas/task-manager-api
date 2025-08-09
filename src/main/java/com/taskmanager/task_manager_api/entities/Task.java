@@ -1,13 +1,17 @@
 package com.taskmanager.task_manager_api.entities;
 
+import com.taskmanager.task_manager_api.enumns.Status;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+
+import java.time.LocalDateTime;
+
 @Entity
-@Table(name="Task")
+@Table(name="tasks")
 @Data
 @NoArgsConstructor
 public class Task {
@@ -21,6 +25,12 @@ public class Task {
 
     @Column(nullable = false)
     private String description;
+
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
+    private Status status;
+
+    private LocalDateTime dueDate;
 
 
 }
