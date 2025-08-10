@@ -1,8 +1,10 @@
 API de Gerenciamento de Tarefas (Task Manager API)
 Descrição do Projeto
-Este projeto é uma API RESTful completa e funcional para gerenciar tarefas de forma eficiente. Desenvolvida em Java com Spring Boot, a API foi criada para demonstrar a aplicação de tecnologias modernas e boas práticas de desenvolvimento de software em uma solução de ponta a ponta.
+Este projeto é uma API RESTful completa e funcional para gerenciar tarefas de forma eficiente. Desenvolvida em Java com Spring Boot, 
+a API foi criada para demonstrar a aplicação de tecnologias modernas e boas práticas de desenvolvimento de software em uma solução de ponta a ponta.
 
-A arquitetura da aplicação é organizada em camadas (Controller, Service, Repository), seguindo os princípios de design REST. Esta versão do projeto foca exclusivamente no gerenciamento de tarefas, oferecendo um conjunto completo de endpoints para as operações de CRUD.
+A arquitetura da aplicação é organizada em camadas (Controller, Service, Repository), seguindo os princípios de design REST. 
+Esta versão do projeto foca exclusivamente no gerenciamento de tarefas, oferecendo um conjunto completo de endpoints para as operações de CRUD.
 
 Funcionalidades Implementadas
 Gerenciamento Completo de Tarefas (CRUD): Endpoints para criar, ler, atualizar e excluir tarefas.
@@ -48,7 +50,9 @@ Crie um banco de dados PostgreSQL chamado taskmanager_db.
 Defina as suas credenciais como variáveis de ambiente ou no arquivo application.properties:
 
 spring.datasource.url=jdbc:postgresql://localhost:5433/taskmanager_db
+
 spring.datasource.username=${DATABASE_USERNAME:postgres}
+
 spring.datasource.password=${DATABASE_PASSWORD:sua_senha}
 
 
