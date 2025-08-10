@@ -64,7 +64,11 @@ Endpoints da API
 A API expõe os seguintes endpoints para o gerenciamento de tarefas:
 
 | POST | /tasks | Cria uma nova tarefa. | POST /tasks |
+
 | GET | /tasks/{id} | Busca uma tarefa específica por ID. | GET /tasks/1 |
+
 | GET | /tasks?title={titulo} | Busca uma tarefa específica por título. | GET /tasks?title=Primeira%20Tarefa |
+
 | PUT | /tasks/{id} | Atualiza uma tarefa existente por ID. | PUT /tasks/1 |
+
 | DELETE | /tasks/{id} | Exclui uma tarefa por ID. | DELETE /tasks/1 |
